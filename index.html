@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Biglietto treno form</title>
+
+    <!-- Third party libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="container pb-5">
+        <h1 class="my-5" id="main-title">Js Dom | Treno</h1>
+        <!-- your code -->
+        <div class="row justify-content-center">
+            <div class="col-6">
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="age_input" class="form-label">Quanti anni hai?</label>
+                            <input type="text" class="form-control" name="age" id="age_input"
+                                value="Mario rossi">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="km_input" class="form-label">Km da percorrere? </label>
+                            <input type="text" class="form-control" name="km" id="km_input">
+                        </div>
+
+                        <button class="btn btn-primary pulsante-accedi">Accedi</button>
+                    </div>
+                </div>
+            </div>
+            <p id="risposta"></p>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
