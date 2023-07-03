@@ -3,12 +3,14 @@
 // const userAge = prompt("Quanti anni hai?");
 // const tripKm = prompt("Quanti chilometri devi fare?");
 
-const usernameInputElement = document.querySelector("[name='age']");
-const passwordInputElement = document.querySelector("[name='km']");
+const ageInputElement = document.querySelector("[name='age']");
+const kmInputElement = document.querySelector("[name='km']");
 const btnLogin = document.querySelector(".pulsante-accedi");
 // const pricePerKm = 0.21;
 // const ticketPrice = tripKm * pricePerKm;
 // let discount = 0;
+
+console.dir(ageInputElement);
 
 // Aggiunta di event listener
 btnLogin.addEventListener("click", function () {
