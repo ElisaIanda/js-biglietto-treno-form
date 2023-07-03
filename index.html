@@ -19,30 +19,104 @@
 
 <body>
 
-    <main class="container pb-5">
-        <h1 class="my-5" id="main-title">Js Dom | Treno</h1>
-        <!-- your code -->
-        <div class="row justify-content-center">
-            <div class="col-6">
-
-                <div class="card">
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <label for="age_input" class="form-label">Quanti anni hai?</label>
-                            <input type="text" class="form-control" name="age" id="age_input"
-                                value="Mario rossi">
+    <main class="container">
+        <h2 class="my-5 text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="row my-5 py-3" style="border: 1px solid black;">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <label for="fullname_input" class="form-label">Nome e Cognome</label>
+                            <input type="text" class="form-control" name="fullname" id="fullname_input" value="">
                         </div>
-
-                        <div class="mb-3">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <label for="age_input" class="form-label">Quanti anni hai?</label>
+                            <input type="text" class="form-control" name="age" id="age_input" value="">
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <label for="age_input" class="form-label">Quanti anni hai?</label>
+                            <input type="text" class="form-control" name="age" id="age_input" value="">
+                            <select class="form-select form-select-lg mb-3" for="age_input" aria-label=".form-select-lg example" name="age" id="age_input">
+                                <option selected>Seleziona</option>
+                                <option value="1">min-18</option>
+                                <option value="2">mag-65</option>
+                                <option value="3">altro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
                             <label for="km_input" class="form-label">Km da percorrere? </label>
                             <input type="text" class="form-control" name="km" id="km_input">
                         </div>
-
-                        <button class="btn btn-primary pulsante-accedi">Accedi</button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body d-flex gap-2">
+                            <button class="col-6 btn btn-primary pulsante-registra">Genera</button>
+                            <button class="col-6 btn btn-primary pulsante-annulla">Annulla</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <p id="risposta"></p>
+
+            <div class="d-none" id="ticket">
+                <h2 class="my-1 text-center">IL TUO BIGLIETTO</h1>
+                    <div class="row py-3" style="border: 1px solid black;">
+                        <h3>DETTAGLIO PASSEGGERI</h3>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nome passeggero</h5>
+                                    <p class="card-text" id="fullname"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Offerta</h5>
+                                    <p class="card-text">Biglietto standard</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carrozza</h5>
+                                    <p class="card-text">5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Codice CP</h5>
+                                    <p class="card-text">92911</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Costo biglietto</h5>
+                                    <p class="card-text" id="ticketpricediscount"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
     </main>
 
     <script src="js/main.js"></script>
